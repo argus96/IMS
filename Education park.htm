@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducationPark</title>
+<link rel="stylesheet" href="css/ep.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+           <img src="logo2.png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            COURSES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li><a class="dropdown-item" href="#">COURSES GRID</a></li>
+                            <li><a class="dropdown-item" href="#">COURSES LEFT SIDEBAR</a></li>
+                            <li><a class="dropdown-item" href="#">COURSES RIGHT SIDEBAR</a></li>
+                            <li><a class="dropdown-item" href="#">COURSES SINGLE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="teachersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TEACHERS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="teachersDropdown">
+                            <li><a class="dropdown-item" href="#">OUR TEACHERS</a></li>
+                            <li><a class="dropdown-item" href="#">TEACHER SINGLE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOG
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="#">BLOG GRID</a></li>
+                            <li><a class="dropdown-item" href="#">BLOG SINGLE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="image-conatainer">
+
+        <div class="w3-content w3-section" style="max-width:1600px" style="max-height:500px">
+            
+            <img class="mySlides" src="books.jpg" width="100%" height="50%">
+        <img class="mySlides" src="teach.jpg" width="100%" height="50%">
+    </div>
+
+    </div>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+    <div class="welcome-container">
+        <div class="row">
+                <h1>Welcome To our <span>Education Park</span></h1>
+               
+                <p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true <br> generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence <br>structures, to generate Lorem Ipsum which looks reasonable.</p>
+        </div>
+    </div>
+    <section class="about-field">
+        <div class="container">
+            <div class="row">
+                    <div class="section-title">
+                        <h2>what <span>we do</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat <br>harum sequi, nesciunt consequatur magni voluptatem similique </p>
+                    </div>
+            </div>
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-box animated fadeInLeftShort slow delay-250">
+                        <h4>modern campus</h4>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ulla laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <a class="btn btn-default irs-btn-transparent" href="#" role="button">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-box animated fadeInUpShort slow delay-500">
+                        <h4>graduate university</h4>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ulla laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <a class="btn btn-default irs-btn-transparent" href="#" role="button">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-box animated fadeInRightShort slow delay-250">
+                        <h4>bus service</h4>
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ulla laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <a class="btn btn-default irs-btn-transparent" href="#" role="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            </section>
+                <section class="divider-field" style=" background-image: url('dp.jpg'); background-size: cover; ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-12">
+                                <h2>we are very helpfull</h2><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtin didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtin didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="divider-col">
+                                    <h2> call us</h2>
+                                    <div class="call-number">
+                                        <h4>+021 - 123 1012 1211</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="course-field">
+                    <div class="container">
+                        <div class="row">
+                            <div class="clo-md-6 col-md-offset-3">
+                                <h2>Our <span>courses</span></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat <br>harum sequi, nesciunt consequatur magni voluptatem similique </p>
+                                </div>
+                                <div class="course-img1 col-md-4 col-sm-6">
+                                        <img src="1.jpg" alt="1img">
+                                    <div class="course-content">
+                                        <h4>computer science</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat harum sequi, nesciunt consequatur</p>
+                                            <a class="btn btn-default irs-btn-transparent-two" href="#" role="button">READ MORE</a>
+                                    </div>
+                                </div>
+                            <div class="course-img2 col-md-4 col-sm-6">
+                                <img src="2.jpg" alt="2img">
+                            <div class="couurse-content">
+                                <h4>medical science</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat harum sequi, nesciunt consequatur</p>
+                                            <a class="btn btn-default irs-btn-transparent-two" href="#" role="button">READ MORE</a>
+                            </div>
+                                     </div>
+                             <div class="course-img3 col-md-4 col-sm-6">
+                            <img src="3.jpg" alt="3img">
+                            <div class="course-content">
+                                <h4>Geometry course</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat harum sequi, nesciunt consequatur</p>
+                                        <a class="btn btn-default irs-btn-transparent-two" href="#" role="button">READ MORE</a>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    
+                 </section>
+ 
+
+
+    
+
+</div>
+
+</body>
+</html>
